@@ -76,7 +76,7 @@ DATABASES = {
         'NAME': 'd1ti037lmbmi4g',
         'USER': 'ufpyngemccekwj',
         'PASSWORD': '3ab1867931526b8f7a44f35bfe0fb1082eaeecfb859dc762e4ccf30518745db5',
-        'HOST': 'http://ec2-52-200-48-116.compute-1.amazonaws.com/'
+        'HOST': 'ec2-52-200-48-116.compute-1.amazonaws.com/'
     }
 }
 
