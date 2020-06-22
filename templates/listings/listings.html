@@ -88,7 +88,11 @@
                         <a  class="meta-chat">{{listing.College}}</a>
                       </p>
                     </div>
+                   {% if user.is_authenticated %}
                     <h3 class="heading"><a href="{% url 'listing' listing.id %}">{{listing.title}}<br>(₹ {{ listing.price | intcomma }})</a></h3>
+                    {% else %}
+                    <h3 class="heading"><a href="{% url 'login' %}">{{listing.title}}<br>(₹ {{ listing.price | intcomma }})</a></h3>
+                    {%endif%}
                     <p>{{listing.description}}</p>
                   </div>
                 </div>
