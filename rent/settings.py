@@ -70,7 +70,7 @@ WSGI_APPLICATION = 'rent.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd1ti037lmbmi4g',
@@ -78,8 +78,16 @@ DATABASES = {
         'PASSWORD': '3ab1867931526b8f7a44f35bfe0fb1082eaeecfb859dc762e4ccf30518745db5',
         'HOST': 'ec2-52-200-48-116.compute-1.amazonaws.com/'
     }
+}"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'irentdb',
+        'USER': 'irentiit@irentiit',
+        'PASSWORD': 'Mridul@shresth',
+        'HOST': 'irentiit.postgres.database.azure.com'
+    }
 }
-
 #import dj_database_url
 #db_from_env = dj_database_url.config(conn_max_age=600)
 #DATABASES['default'].update(db_from_env)
